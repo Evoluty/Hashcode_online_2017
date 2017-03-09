@@ -25,7 +25,7 @@ def import_input(file_name):
             ep = next_line(f)
             latency, connected_caches = map(int, ep)
 
-            cache_latency = [0]*V.number_caches_servers
+            cache_latency = [[0] for i in range(V.number_caches_servers)]
             for j in range(connected_caches):
                 c = next_line(f)
                 index, value = map(int, c)

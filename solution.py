@@ -3,6 +3,8 @@ from consts import *
 
 # Resolve the problem and put correct global variables
 def solve():
+    V.cache_servers = [[] for i in range(V.number_caches_servers)]
+
     print("number video: " + str(V.number_videos))
     print("number ep: " + str(V.number_endpoints))
     print("number rq: " + str(V.number_requests))
@@ -14,4 +16,3 @@ def solve():
     print(V.endpoints)
     print("requests: ")
     print(V.requests)
-
