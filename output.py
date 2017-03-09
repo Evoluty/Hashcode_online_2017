@@ -1,4 +1,4 @@
-from solution import *
+from consts import *
 
 
 # Export global variables into output file
