@@ -31,7 +31,7 @@ def import_input(file_name):
                 cache_latency[index] = value
 
             V.endpoints.append({
-                "datacenter": latency,
+                "data_center": latency,
                 "caches": cache_latency
             })
 
