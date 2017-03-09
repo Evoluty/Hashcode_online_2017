@@ -1,4 +1,8 @@
 __pycache__/*
 .idea/*
 
+outputs/*
+!outputs/.keep
 
+inputs/*
+!inputs/.keep

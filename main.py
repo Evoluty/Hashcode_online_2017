@@ -2,7 +2,7 @@ from output import *
 
 
 def main():
-    input_files = ["file1", "file2", "file3"]
+    input_files = ["test"]
 
     for file in input_files:
         print("Working on: [" + file + "]")
