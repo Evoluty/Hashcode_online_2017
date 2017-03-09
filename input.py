@@ -1,6 +1,7 @@
 from consts import *
 
 
+# Reads next line of a given file and returns an array of words
 def next_line(file):
     res = file.readline()
     if res:
