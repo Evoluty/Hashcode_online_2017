@@ -4,5 +4,5 @@ __pycache__/*
 outputs/*
 !outputs/.keep
 
-inputs/*
+# inputs/*
 !inputs/.keep

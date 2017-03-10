@@ -25,7 +25,7 @@ def import_input(file_name):
             ep = next_line(f)
             latency, connected_caches = map(int, ep)
 
-            cache_latency = [[0] for _ in range(V.number_caches_servers)]
+            cache_latency = [0 for _ in range(V.number_caches_servers)]
             for j in range(connected_caches):
                 c = next_line(f)
                 index, value = map(int, c)
@@ -47,3 +47,7 @@ def import_input(file_name):
             }
             V.requests.append(r)
             line = next_line(f)
+
+        # Init the two variables needed to solve the problem
+        V.server_videos_stored = [[] for _ in range(V.number_caches_servers)]
+        V.server_size_left = [V.size_caches_servers for _ in range(V.number_caches_servers)]
