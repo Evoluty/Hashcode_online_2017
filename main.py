@@ -4,18 +4,22 @@ from output import *
 
 
 def main():
-    input_files = ["me_at_the_zoo.in"]
+    input_files = []
+    input_files.append("me_at_the_zoo.in")
+    input_files.append("trending_today.in")
+    input_files.append("videos_worth_spreading.in")
+    input_files.append("kittens.in")
 
     for file in input_files:
-        print("Working on: [" + file + "]")
+        print("Working on: [{}]".format(file))
 
-        import_input("inputs/" + file)
+        import_input("inputs/{}".format(file))
         print("- Import finished")
 
         solve()
         print("- Solve finished")
 
-        export_output("outputs/" + file.replace(".in", ".out"))
+        export_output("outputs/{}".format(file.replace(".in", ".out")))
         print("- Export finished")
 
         print()

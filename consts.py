@@ -10,4 +10,5 @@ class V:
     endpoints = []
     requests = []
 
-    cache_servers = []
+    server_videos_stored = []
+    server_size_left = []
