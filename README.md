@@ -1,4 +1,4 @@
-# Hashcode_online_2017
+# Hashcode Online 2017
 
 This project is a solution of the **Google Hashcode 2017** online qualification round
   
