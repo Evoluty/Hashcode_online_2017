@@ -11,7 +11,7 @@ You got 4 big functions:
 - `import_input` in input.py which reads from the input file and put in variables (stored in V class)
 - `solve` in solution.py which is (at the moment) a very bad solver
 - `export_output` in output.py which exports the results in .out files
-- `rank` in ranking.py which returns the score of the given input
+- `rank` in ranking.py which returns the score of the given output
 
 You can run:
 - `./install.sh` to install everything needed in the project (only python3 here but you can add external libraries here)
