@@ -46,8 +46,11 @@ def rank(input_file, output_file):
             videos = line
 
             for i, v in enumerate(videos):
+                if server_contains_video(server, v):
+                    print("Error: Duplicate video index {}.".format(v))
+                    exit(1)
                 if not add_video(server, v):
-                    print("Cannot add video {} in server {}".format(v, server))
+                    print("Error: Video {} does not fit in the cache {}.".format(v, server))
                     exit(1)
 
     # We go through requests and get score each time
