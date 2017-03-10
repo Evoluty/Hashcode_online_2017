@@ -15,7 +15,7 @@ def min_latency(ep, video):
         if server_contains_video(i, video):
             servers_available.append(v)
     servers = list(filter(lambda x: x > 0, servers_available))
-    for i, v in enumerate(servers):
+    for v in servers:
         if v < mini:
             mini = v
     return mini
@@ -45,7 +45,7 @@ def rank(input_file, output_file):
             server = line.pop(0)
             videos = line
 
-            for i, v in enumerate(videos):
+            for v in videos:
                 if server_contains_video(server, v):
                     print("Error: Duplicate video index {}.".format(v))
                     exit(1)
@@ -54,7 +54,7 @@ def rank(input_file, output_file):
                     exit(1)
 
     # We go through requests and get score each time
-    for i, p in enumerate(V.requests):
+    for p in V.requests:
         ep, video, nb_rq = p["ep"], p["video"], p["number"]
         time_saved = earned_time(ep, video) * nb_rq
         total_requests += nb_rq
